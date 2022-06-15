@@ -16,4 +16,4 @@ class FoodsAPI(ListAPIView):
             'food',
             Food.objects.filter(is_publish=True),
         ),
-    )
+    ).distinct()
